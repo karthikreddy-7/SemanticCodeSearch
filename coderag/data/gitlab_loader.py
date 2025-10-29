@@ -1,5 +1,4 @@
 import logging
-import os
 import gitlab
 from typing import List, Optional
 from urllib.parse import urlparse

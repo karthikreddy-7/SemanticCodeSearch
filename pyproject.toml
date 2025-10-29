@@ -15,7 +15,7 @@ dependencies = [
     "sentence-transformers",
     "accelerate",
     "chromadb",
-    "tree-sitter",
+    "python-gitlab",
     "python-dotenv",
 ]
 
