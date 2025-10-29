@@ -1,0 +1,46 @@
+[project]
+name = "coderag"
+version = "0.1.0"
+description = "Lightweight semantic code search engine with embeddings, reranking, and vector storage."
+authors = [
+    { name = "Karthik Reddy Basupally", email = "basupallykarthikreddy@gmail.com" }
+]
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.9"
+
+dependencies = [
+    "torch",
+    "transformers",
+    "sentence-transformers",
+    "accelerate",
+    "chromadb",
+    "tree-sitter",
+    "python-dotenv",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "black",
+    "ruff",
+    "mypy",
+]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.black]
+line-length = 88
+target-version = ['py39']
+
+[tool.ruff]
+select = ["E", "F", "I"]
+line-length = 88
+ignore = ["E501"]
+
+[tool.mypy]
+python_version = 3.9
+warn_return_any = true
+warn_unused_configs = true

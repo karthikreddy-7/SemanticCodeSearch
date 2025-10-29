@@ -45,3 +45,10 @@ GITLAB_TOKEN = os.getenv("GITLAB_TOKEN", "")
 # Logging
 # -------------------------------
 LOG_LEVEL = os.getenv("LOG_LEVEL", "INFO")
+
+# Whitelist: Only include files with these extensions
+ALLOWED_EXTENSIONS = {".java", ".xml", ".properties",".yml"}
+
+# Blacklist: Exclude any files or folders with these exact names
+IGNORED_FOLDERS = {"target", "build", "node_modules", ".git", ".idea", ".vscode","test",".mvn"}
+IGNORED_FILES = {"pom.xml", "mvnw", "mvnw.cmd"}
