@@ -17,6 +17,7 @@ dependencies = [
     "chromadb",
     "python-gitlab",
     "python-dotenv",
+    "sqlalchemy",
 ]
 
 [project.optional-dependencies]
